@@ -49,14 +49,16 @@ const Skills = () => {
     <section 
       ref={sectionRef}
       id="skills" 
-      className="min-h-screen flex items-center justify-center py-40 px-6 sm:px-8 lg:px-12"
+      className="min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12"
+      style={{ paddingTop: '10rem', paddingBottom: '10rem' }}
     >
       <div className="max-w-5xl w-full">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold mb-20 text-center"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-center"
+          style={{ marginBottom: '4rem' }}
         >
           <span className="bg-linear-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             My Skills
@@ -84,7 +86,7 @@ const Skills = () => {
                 <div className={`absolute inset-0 bg-linear-to-br ${skill.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
                 
                 <div className="relative z-10">
-                  <div className="text-5xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-5xl transform group-hover:scale-110 transition-transform duration-300" style={{ marginBottom: '1.5rem' }}>
                     {skill.icon}
                   </div>
                   <h3 className="text-lg font-semibold text-white">

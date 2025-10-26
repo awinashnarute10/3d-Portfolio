@@ -17,14 +17,16 @@ const Contact = () => {
     <section 
       ref={sectionRef}
       id="contact" 
-      className="min-h-screen flex items-center justify-center py-40 px-6 sm:px-8 lg:px-12"
+      className="min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12"
+      style={{ paddingTop: '10rem', paddingBottom: '10rem' }}
     >
-      <div className="max-w-6xl w-full">
+      <div className="max-w-6xl w-full mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-20"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-center"
+          style={{ marginBottom: '4rem' }}
         >
           <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Get In Touch
@@ -35,14 +37,16 @@ const Contact = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto"
+          className="max-w-5xl"
+          style={{ margin: '0 auto' }}
         >
-          <div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-3xl p-12 lg:p-16 hover:border-cyan-500/30 transition-all duration-500">
+          <div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-3xl hover:border-cyan-500/30 transition-all duration-500" style={{ padding: '4rem' }}>
             <motion.h3
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-4xl md:text-5xl font-bold text-white mb-8 text-center"
+              className="text-4xl md:text-5xl font-bold text-white text-center"
+              style={{ marginBottom: '2rem' }}
             >
               Connect With Me
             </motion.h3>
@@ -51,13 +55,14 @@ const Contact = () => {
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl md:text-2xl text-gray-300 mb-16 leading-relaxed text-center max-w-3xl mx-auto"
+              className="text-xl md:text-2xl text-gray-300 text-center max-w-3xl mx-auto"
+              style={{ marginBottom: '3rem', lineHeight: '2.5rem' }}
             >
               I'm always open to new opportunities and interesting projects. 
               Feel free to reach out if you'd like to work together or just want to say hi!
             </motion.p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto" style={{ gap: '2rem', marginBottom: '3rem' }}>
               {socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
@@ -68,20 +73,24 @@ const Contact = () => {
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                   whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ duration: 0.2 }}
                   className="group relative overflow-hidden rounded-2xl p-8 transition-all duration-300"
                   style={{
                     background: social.gradient,
-                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
                   }}
                 >
-                  <div className="flex items-center gap-6">
+                  <div className="flex items-center gap-6" style={{ position: 'relative', zIndex: 10 }}>
                     <span className="text-6xl">{social.icon}</span>
-                    <div>
+                    <div className="text-left">
                       <span className="text-2xl font-bold text-white block">{social.name}</span>
                       <span className="text-sm text-white/80">Connect on {social.name}</span>
                     </div>
                   </div>
-                  <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-150" style={{ zIndex: 1 }} />
                 </motion.a>
               ))}
             </div>
@@ -90,7 +99,8 @@ const Contact = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-center pt-8 border-t border-white/10 mt-8"
+              className="text-center border-t border-white/10"
+              style={{ paddingTop: '2rem', marginTop: '2rem' }}
             >
               <p className="text-2xl text-gray-300 font-semibold">
                 Let's build something amazing together! 🚀

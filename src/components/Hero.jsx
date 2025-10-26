@@ -59,6 +59,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 1 }}
             className="flex flex-wrap gap-6 justify-start"
+            style={{ marginTop: '3rem' }}
           >
             <a
               href="#projects"
