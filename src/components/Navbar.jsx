@@ -41,7 +41,7 @@ const Navbar = () => {
               className="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600 rounded-lg p-2"
               aria-label="Toggle menu"
             >
-            >
+            
               <svg
                 className="h-6 w-6"
                 fill="none"
