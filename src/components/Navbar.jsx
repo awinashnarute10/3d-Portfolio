@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="flex-shrink-0 ml-24"
+            className="shrink-0 ml-24"
           >
             <a href="#home" className="text-2xl font-bold px-4 py-2" style={{
               background: 'linear-gradient(to right, #a78bfa, #ec4899)',

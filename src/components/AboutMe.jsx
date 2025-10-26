@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -24,7 +25,7 @@ const AboutMe = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-5xl md:text-6xl lg:text-7xl font-bold mb-16 text-center"
         >
-          <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
             About Me
           </span>
         </motion.h2>
@@ -46,19 +47,19 @@ const AboutMe = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
           >
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-purple-500/10 to-transparent border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
+            <div className="text-center p-8 rounded-2xl bg-linear-to-br from-purple-500/10 to-transparent border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
               <div className="text-4xl mb-3">🎯</div>
               <h3 className="text-xl font-semibold text-white mb-2">Focused</h3>
               <p className="text-gray-400 text-sm">On modern web technologies</p>
             </div>
             
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300">
+            <div className="text-center p-8 rounded-2xl bg-linear-to-br from-cyan-500/10 to-transparent border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300">
               <div className="text-4xl mb-3">💡</div>
               <h3 className="text-xl font-semibold text-white mb-2">Creative</h3>
               <p className="text-gray-400 text-sm">Problem solver & innovator</p>
             </div>
             
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-pink-500/10 to-transparent border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
+            <div className="text-center p-8 rounded-2xl bg-linear-to-br from-pink-500/10 to-transparent border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
               <div className="text-4xl mb-3">🚀</div>
               <h3 className="text-xl font-semibold text-white mb-2">Driven</h3>
               <p className="text-gray-400 text-sm">Always learning & growing</p>

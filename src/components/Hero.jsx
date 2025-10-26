@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 
 const Hero = () => {
@@ -38,7 +39,7 @@ const Hero = () => {
           </motion.div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 whitespace-pre-line">
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
               {displayText}
             </span>
             <span className="cursor text-purple-400 animate-pulse">|</span>

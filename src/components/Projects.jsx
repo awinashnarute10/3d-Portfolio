@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -40,7 +41,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-5xl md:text-6xl lg:text-7xl font-bold text-center mb-20"
         >
-          <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
             My Projects
           </span>
         </motion.h2>
@@ -58,14 +59,14 @@ const Projects = () => {
               <div className="h-full min-h-[500px] backdrop-blur-lg bg-white/5 border border-white/10 rounded-3xl p-10 flex flex-col transition-all duration-300 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20">
                 <div className="mb-6">
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                    <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:from-pink-400 group-hover:to-cyan-400 transition-all duration-300">
+                    <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:from-pink-400 group-hover:to-cyan-400 transition-all duration-300">
                       {project.title}
                     </span>
                   </h3>
-                  <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full group-hover:w-full transition-all duration-500" />
+                  <div className="w-20 h-1 bg-linear-to-r from-purple-500 to-pink-500 rounded-full group-hover:w-full transition-all duration-500" />
                 </div>
                 
-                <p className="text-gray-300 leading-relaxed flex-grow mb-8 text-base md:text-lg">
+                <p className="text-gray-300 leading-relaxed grow mb-8 text-base md:text-lg">
                   {project.description}
                 </p>
                 
@@ -74,7 +75,7 @@ const Projects = () => {
                     href={project.deploymentLink} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="flex-1 text-center py-3 px-4 rounded-xl font-semibold text-white bg-gradient-to-r from-purple-600 to-pink-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50"
+                    className="flex-1 text-center py-3 px-4 rounded-xl font-semibold text-white bg-linear-to-r from-purple-600 to-pink-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50"
                   >
                     🚀 Live Demo
                   </a>

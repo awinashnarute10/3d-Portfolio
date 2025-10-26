@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -57,7 +58,7 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-5xl md:text-6xl lg:text-7xl font-bold mb-20 text-center"
         >
-          <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             My Skills
           </span>
         </motion.h2>
@@ -80,7 +81,7 @@ const Skills = () => {
               className="group relative overflow-hidden"
             >
               <div className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl p-8 text-center transition-all duration-300 hover:border-white/30 hover:shadow-2xl hover:shadow-purple-500/20 min-h-[180px] flex flex-col justify-center">
-                <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
+                <div className={`absolute inset-0 bg-linear-to-br ${skill.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
                 
                 <div className="relative z-10">
                   <div className="text-5xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
