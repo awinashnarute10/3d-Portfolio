@@ -31,9 +31,10 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 1 }}
-            className="inline-block mb-4"
+            className="inline-block"
+            style={{ marginBottom: '2rem' }}
           >
-            <span className="px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-sm font-medium">
+            <span className="rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 font-medium" style={{ padding: '0.75rem 1.5rem', fontSize: '1rem' }}>
               👋 Welcome to my portfolio
             </span>
           </motion.div>

@@ -51,19 +51,19 @@ const AboutMe = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-6"
             style={{ marginTop: '3rem' }}
           >
-            <div className="text-center p-8 rounded-2xl bg-linear-to-br from-purple-500/10 to-transparent border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
+            <div className="text-center rounded-2xl bg-linear-to-br from-purple-500/10 to-transparent border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300" style={{ padding: '2.5rem' }}>
               <div className="text-4xl mb-3">🎯</div>
               <h3 className="text-xl font-semibold text-white mb-2">Focused</h3>
               <p className="text-gray-400 text-sm">On modern web technologies</p>
             </div>
             
-            <div className="text-center p-8 rounded-2xl bg-linear-to-br from-cyan-500/10 to-transparent border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300">
+            <div className="text-center rounded-2xl bg-linear-to-br from-cyan-500/10 to-transparent border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300" style={{ padding: '2.5rem' }}>
               <div className="text-4xl mb-3">💡</div>
               <h3 className="text-xl font-semibold text-white mb-2">Creative</h3>
               <p className="text-gray-400 text-sm">Problem solver & innovator</p>
             </div>
             
-            <div className="text-center p-8 rounded-2xl bg-linear-to-br from-pink-500/10 to-transparent border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
+            <div className="text-center rounded-2xl bg-linear-to-br from-pink-500/10 to-transparent border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300" style={{ padding: '2.5rem' }}>
               <div className="text-4xl mb-3">🚀</div>
               <h3 className="text-xl font-semibold text-white mb-2">Driven</h3>
               <p className="text-gray-400 text-sm">Always learning & growing</p>

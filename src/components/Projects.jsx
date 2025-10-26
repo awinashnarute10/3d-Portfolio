@@ -59,7 +59,7 @@ const Projects = () => {
               whileHover={{ y: -10 }}
               className="group h-full"
             >
-              <div className="h-full min-h-[500px] backdrop-blur-lg bg-white/5 border border-white/10 rounded-3xl p-10 flex flex-col transition-all duration-300 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20">
+              <div className="h-full min-h-[500px] backdrop-blur-lg bg-white/5 border border-white/10 rounded-3xl flex flex-col transition-all duration-300 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20" style={{ padding: '3rem' }}>
                 <div className="mb-6 text-center">
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">
                     <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:from-pink-400 group-hover:to-cyan-400 transition-all duration-300">
@@ -110,7 +110,7 @@ const Projects = () => {
               whileHover={{ y: -10 }}
               className="group h-full"
             >
-              <div className="h-full min-h-[500px] backdrop-blur-lg bg-white/5 border border-white/10 rounded-3xl p-10 flex flex-col transition-all duration-300 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20">
+              <div className="h-full min-h-[500px] backdrop-blur-lg bg-white/5 border border-white/10 rounded-3xl flex flex-col transition-all duration-300 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20" style={{ padding: '3rem' }}>
                 <div className="mb-6 text-center">
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">
                     <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:from-pink-400 group-hover:to-cyan-400 transition-all duration-300">
